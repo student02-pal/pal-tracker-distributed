@@ -1,0 +1,15 @@
+
+
+https://registration-pal-mjt.apps.longs.pal.pivotal.io
+
+https://registration-pal-mjt.apps.longs.pal.pivotal.io/registration
+
+curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-mjt.apps.longs.pal.pivotal.io/registration -d'{"name": "Pete"}'
+
+curl -i https://registration-pal-mjt.apps.longs.pal.pivotal.io/accounts?ownerId=19
+
+
+curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-mjt.apps.longs.pal.pivotal.io/projects -d'{"name": "Project A", "accountId": 19}'
+curl -i -XPOST -H"Content-Type: application/json" https://registration-pal-mjt.apps.longs.pal.pivotal.io/projects -d'{"name": "Project B", "accountId": 19}'
+
+
