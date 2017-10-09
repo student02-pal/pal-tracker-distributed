@@ -1,0 +1,27 @@
+
+
+  "p-identity": [
+   {
+    "credentials": {
+     "auth_domain": "https://p-identity.login.sys.longs.pal.pivotal.io",
+     "client_id": "f8ca080c-7065-4c86-a68f-0828735892fe",
+     "client_secret": "46a82d69-7d37-4144-9ad4-472eaaf3f7bf"
+    },
+    "label": "p-identity",
+    "name": "tracker-sso",
+    "plan": "p-identity",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+
+
+curl -k 'https://p-identity.login.sys.longs.pal.pivotal.io/oauth/token' -i -u 'f8ca080c-7065-4c86-a68f-0828735892fe:46a82d69-7d37-4144-9ad4-472eaaf3f7bf' -X POST -H 'Accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=client_credentials&response_type=token'
+
+{"access_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImtleS0xIiwidHlwIjoiSldUIn0.eyJqdGkiOiJkOTgwNTkzMjc1OTM0ZGQxYWFlOTI5YTlkNmI5M2MwZSIsInN1YiI6ImY4Y2EwODBjLTcwNjUtNGM4Ni1hNjhmLTA4Mjg3MzU4OTJmZSIsImF1dGhvcml0aWVzIjpbInVhYS5yZXNvdXJjZSJdLCJzY29wZSI6WyJ1YWEucmVzb3VyY2UiXSwiY2xpZW50X2lkIjoiZjhjYTA4MGMtNzA2NS00Yzg2LWE2OGYtMDgyODczNTg5MmZlIiwiY2lkIjoiZjhjYTA4MGMtNzA2NS00Yzg2LWE2OGYtMDgyODczNTg5MmZlIiwiYXpwIjoiZjhjYTA4MGMtNzA2NS00Yzg2LWE2OGYtMDgyODczNTg5MmZlIiwiZ3JhbnRfdHlwZSI6ImNsaWVudF9jcmVkZW50aWFscyIsInJldl9zaWciOiJmOTIzOTQ4YSIsImlhdCI6MTUwNzU3NTE2MSwiZXhwIjoxNTA3NjE4MzYxLCJpc3MiOiJodHRwczovL3AtaWRlbnRpdHkudWFhLnN5cy5sb25ncy5wYWwucGl2b3RhbC5pby9vYXV0aC90b2tlbiIsInppZCI6IjE5YTNmOTQyLTQ5YWMtNDkyYy1iMjg2LWMyMzdkMGRjODg0NSIsImF1ZCI6WyJ1YWEiLCJmOGNhMDgwYy03MDY1LTRjODYtYTY4Zi0wODI4NzM1ODkyZmUiXX0.fpssTur4p5nI0YIQRm6QPBehZjG3EhdRFjP8CZspwLzdM4OKDYFY8eWDwl9HyJm7yVBtD5LAVrUIFWU8Ly-K8dD6HwrJ3UirGfxX4IPR-v60QVxZLoHbSteN4m-d1BzA4JFbcv2Uc6orMKME_HO76PfEjhhMSCzkc19uQ2L5ciBqO7PTPWkJOpOxnNkR_rxTpcwG6D0erg8ke_xmAojmIMHOVZpH4WBsrdxjZWPkUSaBrNp3-RaaoiaX0W-6C-QCI9HCevnCj3LayJSJg4fZz2JupBkbqBTdgofQ7CRoocwy2JTjX9GvP_tEmaK40qUvGP7myF6iGrd9-0eOVb3vnQ","token_type":"bearer","expires_in":43199,"scope":"uaa.resource","jti":"d980593275934dd1aae929a9d6b93c0e"}
+
+
+
+
+
